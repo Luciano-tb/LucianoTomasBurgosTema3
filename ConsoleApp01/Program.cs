@@ -1,29 +1,33 @@
 ﻿using System;
 
-class Program
+namespace PrismaRectangular
 {
-    static void Main()
+    class Program
     {
-        Console.WriteLine("Ingrese la longitud del prisma:");
-        double longitud = Convert.ToDouble(Console.ReadLine());
+        static void Main(string[] args)
+        {
+            Console.Write("Ingrese la longitud del prisma: ");
+            double longitud = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("Ingrese el ancho del prisma:");
-        double ancho = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Ingrese el ancho del prisma: ");
+            double ancho = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("Ingrese la altura del prisma:");
-        double altura = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Ingrese la altura del prisma: ");
+            double altura = Convert.ToDouble(Console.ReadLine());
 
-        double volumen = longitud * ancho * altura;
+            double volumen = longitud * ancho * altura;
 
-        double area = 2 * (longitud * ancho + longitud * altura + ancho * altura);
+            double area = 2 * (longitud * ancho + longitud * altura + ancho * altura);
 
-        double diagonal = Math.Sqrt(Math.Pow(longitud, 2) + Math.Pow(ancho, 2) + Math.Pow(altura, 2));
+            double diagonal = Math.Sqrt(Math.Pow(longitud, 2) + Math.Pow(ancho, 2) + Math.Pow(altura, 2));
 
-        Console.WriteLine("\nResultados:");
-        Console.WriteLine("Volumen del prisma: " + volumen + " unidades cúbicas");
-        Console.WriteLine("Área del prisma: " + area + " unidades cuadradas");
-        Console.WriteLine("Diagonal del prisma: " + diagonal + " unidades");
+            Console.WriteLine("\nResultados:");
+            Console.WriteLine($"Volumen del prisma: {volumen}");
+            Console.WriteLine($"Área del prisma: {area}");
+            Console.WriteLine($"Diagonal del prisma: {diagonal}");
 
-        Console.ReadKey(); 
+            Console.WriteLine("\nPresione cualquier tecla para salir...");
+            Console.ReadKey();
+        }
     }
 }
