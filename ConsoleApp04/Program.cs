@@ -52,7 +52,7 @@ namespace AdministradorDePrismas
     {
         static void Main(string[] args)
         {
-            const int tamañoArray = 5; // Tamaño máximo del array de prismas
+            const int tamañoArray = 5; 
             Prisma[] prismas = new Prisma[tamañoArray];
             int cantidadPrismas = 0;
 

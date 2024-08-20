@@ -78,4 +78,3 @@ class Program
         Console.WriteLine($"El promedio de los volúmenes de los prismas ingresados es {promedioVolumenes}.");
     }
 }
-s

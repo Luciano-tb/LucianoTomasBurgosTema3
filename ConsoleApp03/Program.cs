@@ -47,7 +47,6 @@ namespace Entidades
         }
     }
 }
-u
 
 namespace ProgramaPrisma
 {
